@@ -1,17 +1,13 @@
-//
-//  ViewController.swift
-//  Keruen
-//
-//  Created by Temirlan Orazkulov on 14.11.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    private lazy var tableView = UITableView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        navigationItem.title = L10n.Example.example
     }
 
 

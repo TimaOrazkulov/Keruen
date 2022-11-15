@@ -1,0 +1,20 @@
+fonts:
+  inputs: Keruen/Sources/Private/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: Keruen/Sources/Public/FontFamily.generated.swift
+strings:
+  inputs: Keruen/Sources/Private/Localization/Resources/ru.lproj
+  outputs:
+    templatePath: Templates/strings.stencil
+    output: Keruen/Sources/Public/Localization.generated.swift
+    params:
+      publicAccess: 1
+xcassets:
+  inputs: Keruen/Sources/Private/Resources/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: Keruen/Sources/Public/Assets.generated.swift
+    params:
+      enumName: Assets
+      publicAccess: 1
