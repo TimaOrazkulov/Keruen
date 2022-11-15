@@ -28,7 +28,7 @@ public final class Router: NSObject {
     public func presentFloatingPanel(
         contentViewController: Presentable,
         isSwipable: Bool = true,
-        layout: FloatingPanelLayout = FullFloatingPanelLayout(),
+        layout: FloatingPanelLayout,
         cornerRadius: CGFloat = 12,
         animated: Bool = true,
         completion: (() -> Void)? = nil

@@ -30,7 +30,7 @@ public final class NavigationBarConfigurator {
                 needsToDisplayShadow: needsToDisplayShadow
             )
         } else {
-            navigationBar.barTintColor = Assets.fillBackgroundPrimary.color
+            navigationBar.barTintColor = .white
             navigationBar.largeTitleTextAttributes = makeLargeTitleTextAttributes()
             navigationBar.setBackgroundImage(nil, for: .default)
             navigationBar.shadowImage = needsToDisplayShadow ? nil : UIImage()
@@ -54,9 +54,9 @@ public final class NavigationBarConfigurator {
     private func makeDefaultNavigationBarAppearance(needsToDisplayShadow: Bool) -> UINavigationBarAppearance {
         let appearance = UINavigationBarAppearance(idiom: .phone)
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = Assets.fillBackgroundPrimary.color
+        appearance.backgroundColor = .white
         appearance.largeTitleTextAttributes = makeLargeTitleTextAttributes()
-        appearance.shadowColor = needsToDisplayShadow ? Assets.fillDivider.color : nil
+        appearance.shadowColor = needsToDisplayShadow ? .gray : nil
         appearance.titleTextAttributes = makeTitleTextAttributes()
         return appearance
     }
@@ -70,11 +70,11 @@ public final class NavigationBarConfigurator {
     }
 
     private func makeLargeTitleTextAttributes() -> [NSAttributedString.Key: Any] {
-        [.font: Fonts.title0, .foregroundColor: Assets.textPrimary.color]
+        [.font: UIFont(), .foregroundColor: UIColor.black]
     }
 
     private func makeTitleTextAttributes() -> [NSAttributedString.Key: Any] {
-        [.font: Fonts.title2, .foregroundColor: Assets.textPrimary.color]
+        [.font: UIFont(), .foregroundColor: UIColor.black]
     }
 }
 

@@ -66,7 +66,7 @@ open class BaseButton: UIButton {
     private func updateChevronState() {
         imageEdgeInsets = makeImageEdgeInsets()
         semanticContentAttribute = isActiveChevron ? .forceRightToLeft : .forceRightToLeft
-        setImage(isActiveChevron ? Assets.chevron8x16.image : nil, for: .normal)
+//        setImage(isActiveChevron ? Assets.chevron8x16.image : nil, for: .normal)
         titleEdgeInsets = makeTitleEdgeInsets()
     }
 
@@ -76,7 +76,7 @@ open class BaseButton: UIButton {
         contentEdgeInsets = makeContentEdgeInsets()
         imageEdgeInsets = makeImageEdgeInsets()
         titleEdgeInsets = makeTitleEdgeInsets()
-        titleLabel?.font = size == .small ? Fonts.title6 : Fonts.title3
+//        titleLabel?.font = size == .small ? Fonts.title6 : Fonts.title3
         setupActivityIndicatorView()
     }
 

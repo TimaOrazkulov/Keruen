@@ -15,8 +15,6 @@
 		476E84ED292271A600888963 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 476E84EC292271A600888963 /* SkeletonView */; };
 		476E84F0292271D200888963 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 476E84EF292271D200888963 /* KeychainAccess */; };
 		476E84F3292271FE00888963 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 476E84F2292271FE00888963 /* Kingfisher */; };
-		476E84F6292272AF00888963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476E84F5292272AF00888963 /* Assets.xcassets */; };
-		478416AE2923CAB0003AFFB4 /* Keruen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 478416AC2923CAB0003AFFB4 /* Keruen.strings */; };
 		47B768A32923CBE50054BEF8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B768A22923CBE50054BEF8 /* Environment.swift */; };
 		47B768A92923CDE10054BEF8 /* AdaptiveFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B768A82923CDE10054BEF8 /* AdaptiveFloatingPanelLayout.swift */; };
 		47B768AE2923CE2B0054BEF8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B768AC2923CE2B0054BEF8 /* Coordinator.swift */; };
@@ -40,23 +38,18 @@
 		47B768DA2923D0F50054BEF8 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B768D92923D0F50054BEF8 /* DividerView.swift */; };
 		47B768DC2923D14D0054BEF8 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B768DB2923D14D0054BEF8 /* ActivityIndicatorView.swift */; };
 		47B768DF2923D1570054BEF8 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B768DE2923D1570054BEF8 /* BaseButton.swift */; };
+		47B768F02923E2930054BEF8 /* BaseFloatingPanelContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B768EF2923E2930054BEF8 /* BaseFloatingPanelContentViewController.swift */; };
 		47FDF551292268770039857E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FDF550292268770039857E /* AppDelegate.swift */; };
 		47FDF553292268770039857E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FDF552292268770039857E /* SceneDelegate.swift */; };
 		47FDF555292268770039857E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FDF554292268770039857E /* ViewController.swift */; };
-		47FDF558292268770039857E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FDF556292268770039857E /* Main.storyboard */; };
-		47FDF55A2922687B0039857E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FDF5592922687B0039857E /* Assets.xcassets */; };
-		47FDF55D2922687B0039857E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FDF55B2922687B0039857E /* LaunchScreen.storyboard */; };
 		47FDF566292268F80039857E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF565292268F80039857E /* SnapKit */; };
-		47FDF568292268F80039857E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF567292268F80039857E /* SnapKit-Dynamic */; };
 		47FDF56B2922691F0039857E /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF56A2922691F0039857E /* Swinject */; };
-		47FDF56D2922691F0039857E /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF56C2922691F0039857E /* Swinject-Dynamic */; };
 		47FDF573292269C10039857E /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF572292269C10039857E /* FloatingPanel */; };
 		47FDF576292269E20039857E /* FBLPromises in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF575292269E20039857E /* FBLPromises */; };
 		47FDF578292269E20039857E /* FBLPromisesTestHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF577292269E20039857E /* FBLPromisesTestHelpers */; };
 		47FDF57A292269E20039857E /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF579292269E20039857E /* Promises */; };
 		47FDF57C292269E20039857E /* PromisesTestHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF57B292269E20039857E /* PromisesTestHelpers */; };
 		47FDF57F29226AD70039857E /* FLEX in Frameworks */ = {isa = PBXBuildFile; productRef = 47FDF57E29226AD70039857E /* FLEX */; };
-		50D4EE2D6488D4A0678EEA89 /* Pods_Keruen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D05CFBCA72ACFBDB83B83BA /* Pods_Keruen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +60,7 @@
 		47393AE42923CB0300B9A099 /* Localization.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.generated.swift; sourceTree = "<group>"; };
 		476E84F5292272AF00888963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		478416AD2923CAB0003AFFB4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Keruen.strings; sourceTree = "<group>"; };
+		47A61F712923E6D800E87182 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		47B768A22923CBE50054BEF8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		47B768A82923CDE10054BEF8 /* AdaptiveFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		47B768AC2923CE2B0054BEF8 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -90,11 +84,11 @@
 		47B768D92923D0F50054BEF8 /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		47B768DB2923D14D0054BEF8 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		47B768DE2923D1570054BEF8 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		47B768EF2923E2930054BEF8 /* BaseFloatingPanelContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFloatingPanelContentViewController.swift; sourceTree = "<group>"; };
 		47FDF54D292268770039857E /* Keruen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keruen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FDF550292268770039857E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FDF552292268770039857E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		47FDF554292268770039857E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		47FDF557292268770039857E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47FDF5592922687B0039857E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47FDF55C2922687B0039857E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47FDF55E2922687B0039857E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,20 +101,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				47FDF566292268F80039857E /* SnapKit in Frameworks */,
-				47FDF56D2922691F0039857E /* Swinject-Dynamic in Frameworks */,
 				47FDF57F29226AD70039857E /* FLEX in Frameworks */,
 				47FDF573292269C10039857E /* FloatingPanel in Frameworks */,
 				476E84F3292271FE00888963 /* Kingfisher in Frameworks */,
 				47FDF576292269E20039857E /* FBLPromises in Frameworks */,
 				47FDF57A292269E20039857E /* Promises in Frameworks */,
-				47FDF568292268F80039857E /* SnapKit-Dynamic in Frameworks */,
 				47FDF56B2922691F0039857E /* Swinject in Frameworks */,
 				476E84ED292271A600888963 /* SkeletonView in Frameworks */,
 				47FDF57C292269E20039857E /* PromisesTestHelpers in Frameworks */,
 				476E84EA2922718400888963 /* IQKeyboardManagerSwift in Frameworks */,
 				476E84E72922712E00888963 /* Alamofire in Frameworks */,
 				47FDF578292269E20039857E /* FBLPromisesTestHelpers in Frameworks */,
-				50D4EE2D6488D4A0678EEA89 /* Pods_Keruen.framework in Frameworks */,
 				476E84F0292271D200888963 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +131,7 @@
 		476E84F7292272DC00888963 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				47A61F712923E6D800E87182 /* SFProDisplay-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -193,6 +185,7 @@
 		47B768A72923CDD30054BEF8 /* FloatingPanel */ = {
 			isa = PBXGroup;
 			children = (
+				47B768EF2923E2930054BEF8 /* BaseFloatingPanelContentViewController.swift */,
 				47B768A82923CDE10054BEF8 /* AdaptiveFloatingPanelLayout.swift */,
 			);
 			path = FloatingPanel;
@@ -348,7 +341,6 @@
 				47FDF550292268770039857E /* AppDelegate.swift */,
 				47FDF552292268770039857E /* SceneDelegate.swift */,
 				47FDF554292268770039857E /* ViewController.swift */,
-				47FDF556292268770039857E /* Main.storyboard */,
 				47FDF55B2922687B0039857E /* LaunchScreen.storyboard */,
 				47FDF5592922687B0039857E /* Assets.xcassets */,
 				47FDF55E2922687B0039857E /* Info.plist */,
@@ -383,7 +375,6 @@
 				0CE8BC3B97794F91688344D3 /* [CP] Check Pods Manifest.lock */,
 				47FDF549292268770039857E /* Sources */,
 				47FDF54A292268770039857E /* Frameworks */,
-				47FDF54B292268770039857E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -392,9 +383,7 @@
 			name = Keruen;
 			packageProductDependencies = (
 				47FDF565292268F80039857E /* SnapKit */,
-				47FDF567292268F80039857E /* SnapKit-Dynamic */,
 				47FDF56A2922691F0039857E /* Swinject */,
-				47FDF56C2922691F0039857E /* Swinject-Dynamic */,
 				47FDF572292269C10039857E /* FloatingPanel */,
 				47FDF575292269E20039857E /* FBLPromises */,
 				47FDF577292269E20039857E /* FBLPromisesTestHelpers */,
@@ -457,21 +446,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		47FDF54B292268770039857E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47FDF55D2922687B0039857E /* LaunchScreen.storyboard in Resources */,
-				476E84F6292272AF00888963 /* Assets.xcassets in Resources */,
-				478416AE2923CAB0003AFFB4 /* Keruen.strings in Resources */,
-				47FDF55A2922687B0039857E /* Assets.xcassets in Resources */,
-				47FDF558292268770039857E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXShellScriptBuildPhase section */
 		0CE8BC3B97794F91688344D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -526,6 +500,7 @@
 				47B768CC2923CFCB0054BEF8 /* UILabel+EstimatedNumberOfLines.swift in Sources */,
 				47393AE72923CB0300B9A099 /* Localization.generated.swift in Sources */,
 				47B768CB2923CFCB0054BEF8 /* CALayer+Shadow.swift in Sources */,
+				47B768F02923E2930054BEF8 /* BaseFloatingPanelContentViewController.swift in Sources */,
 				47B768B32923CE330054BEF8 /* BaseCoordinator.swift in Sources */,
 				47B768AE2923CE2B0054BEF8 /* Coordinator.swift in Sources */,
 				47B768C42923CF980054BEF8 /* UITableView+Dequeue.swift in Sources */,
@@ -543,14 +518,6 @@
 				478416AD2923CAB0003AFFB4 /* ru */,
 			);
 			name = Keruen.strings;
-			sourceTree = "<group>";
-		};
-		47FDF556292268770039857E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				47FDF557292268770039857E /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		47FDF55B2922687B0039857E /* LaunchScreen.storyboard */ = {
@@ -689,6 +656,7 @@
 				DEVELOPMENT_TEAM = 349CP2QXD4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Keruen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keruen;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -702,9 +670,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Keruen.Keruen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -719,6 +690,7 @@
 				DEVELOPMENT_TEAM = 349CP2QXD4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Keruen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keruen;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -732,9 +704,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Keruen.Keruen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -875,20 +850,10 @@
 			package = 47FDF564292268F80039857E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		47FDF567292268F80039857E /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47FDF564292268F80039857E /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		47FDF56A2922691F0039857E /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 47FDF5692922691F0039857E /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
-		};
-		47FDF56C2922691F0039857E /* Swinject-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47FDF5692922691F0039857E /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = "Swinject-Dynamic";
 		};
 		47FDF572292269C10039857E /* FloatingPanel */ = {
 			isa = XCSwiftPackageProductDependency;
